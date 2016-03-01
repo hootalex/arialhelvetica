@@ -87,3 +87,10 @@ p {
 li:last-child {
   display: none;
 }
+
+p {
+  text-align: center;
+
+}
+
+}
