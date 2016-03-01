@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>The Differences Between Arial and Helvetica</title>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			$("#invert").click(function() {
+
+				$("html, ul").toggleClass("invert");
+			});
+
+			$("#hide").click(function() {
+
+				$("ul").toggleClass("hideaway");
+			});
+
+			$("#switch").click(function() {
+
+				$("p").toggleClass("arial");
+			});
+		});
+	</script>
+	</script>
+</head>
+
+<body>
+	<ul class="ulist">
+		<li>+</li>
+		<li>-</li>
+		<li>Auto switch</li>
+		<li id="switch">Toggle font</li>
+		<li id="invert">Invert</li>
+		<li>Overlay</li>
+		<li id="info">Info</li>
+		<li id="hide">◰</li>
+	</ul>
+	<div class="about">
+		<p>A futile exercise in JQuery. This demonstration will only work if you have both fonts installed on your computer.</p>
+	</div>
+	<div class="letters">
+		<p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+			<br> a b c d e f g h i j k l m n o p q r s t u v w x y z
+			<br> 1 2 3 4 5 6 7 8 9 0</p>
+	</div>
+</body>
+
+</html>
