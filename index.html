@@ -22,6 +22,17 @@
 
 				$("p").toggleClass("arial");
 			});
+
+			$("#info").click(function() {
+				// assumes element with id='button'
+				$("#about").toggle();
+			});
+
+			$("#plus").click(function() {
+
+				$("p").toggleClass("fontplus");
+			});
+
 		});
 	</script>
 	</script>
@@ -29,8 +40,7 @@
 
 <body>
 	<ul class="ulist">
-		<li>+</li>
-		<li>-</li>
+		<li id="plus">+</li>
 		<li>Auto switch</li>
 		<li id="switch">Toggle font</li>
 		<li id="invert">Invert</li>
@@ -38,8 +48,8 @@
 		<li id="info">Info</li>
 		<li id="hide">◰</li>
 	</ul>
-	<div class="about">
-		<p>A futile exercise in JQuery. This demonstration will only work if you have both fonts installed on your computer.</p>
+	<div id="about">
+		<p>A futile exercise in jQuery. This demonstration will only work if you have both fonts installed on your computer.</p>
 	</div>
 	<div class="letters">
 		<p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z

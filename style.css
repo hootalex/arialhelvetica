@@ -1,21 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
 html {
-  cursor: crosshair;
   background-color: white;
   -webkit-font-smoothing: antialiased;
+  cursor: crosshair;
 }
 
-::selection {
-  background: rgba(0, 0, 0, 0);;
-}
-.about {
+::selection { background: rgba(0, 0, 0, 0);; }
+
+#about {
   font-family: Helvetica;
   font-weight: normal;
   font-size: 5em;
   margin: auto;
   width: 75%;
   display: none;
+  border-bottom: 1px solid blue;
 }
 
 .ulist {
@@ -65,4 +65,9 @@ html {
 
 p {
   margin-top: 70px;
+  transition: .5s;
+}
+
+.fontplus {
+  font-size: 2em;
 }
