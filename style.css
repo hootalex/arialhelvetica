@@ -12,7 +12,15 @@ li::selection  { background: rgba(0, 0, 0, 0);; }
 }
 
 a {
-    color: blue; text-decoration: none; border-bottom: 1px solid blue;
+    color: red; text-decoration: none;
+}
+
+a:hover {
+    color: red; text-decoration: none; border-bottom: 1px solid red;
+}
+
+.notice {
+  font-size: .5em;
 }
 
 #about {
@@ -22,7 +30,7 @@ a {
   margin: auto;
   width: 75%;
   display: none;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid red;
 }
 
 .ulist {
@@ -50,7 +58,7 @@ a {
 }
 
 .hideaway {
-  left: -655px;
+  left: -650px;
 }
 
 .invert {
