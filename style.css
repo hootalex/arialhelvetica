@@ -14,7 +14,7 @@ li::selection  { background: rgba(0, 0, 0, 0);; }
 #about {
   font-family: Helvetica;
   font-weight: normal;
-  font-size: 5em;
+  font-size: 2em;
   margin: auto;
   width: 75%;
   display: none;
