@@ -23,6 +23,18 @@ a:hover {
   font-size: .5em;
 }
 
+.autoswitch {
+  animation-name: switch;
+  animation-duration: .7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes switch {
+    0%   {font-family: Helvetica;}
+    50%  {font-family: Arial;}
+    100%  {font-family: Helvetica;}
+  }
+
 #about {
   font-family: Helvetica;
   font-weight: normal;
