@@ -11,6 +11,10 @@ li::selection  { background: rgba(0, 0, 0, 0);; }
     outline:none;
 }
 
+a {
+    color: blue; text-decoration: none; border-bottom: 1px solid blue;
+}
+
 #about {
   font-family: Helvetica;
   font-weight: normal;
