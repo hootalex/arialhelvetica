@@ -6,6 +6,7 @@ html {
 }
 
 li::selection  { background: rgba(0, 0, 0, 0);; }
+li::-moz-selection { background: rgba(0, 0, 0, 0);; }
 
 .editable:focus {
     outline:none;
