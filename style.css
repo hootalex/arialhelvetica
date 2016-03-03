@@ -85,6 +85,14 @@ span {
   transition: left .1s;
 }
 
+.ulist > li:nth-child(7) {
+  display: none;
+}
+
+.hideaway > li:nth-child(7) {
+  display: block;
+}
+
 .hideaway {
   left: -650px;
 }
