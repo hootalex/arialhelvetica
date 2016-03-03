@@ -34,6 +34,12 @@
                 // assumes element with id='button'
                 $("#about").toggle();
             });
+
+            $("#about").click(function() {
+                // assumes element with id='button'
+                $("#about").toggle();
+            });
+
             $("#autoswitch").click(function() {
 
                 $("p").toggleClass("autoswitch");
@@ -93,12 +99,12 @@
                 Paragraph
             </option>
         </select></li>
-        <li id="autoswitch">Auto switch</li>
-        <li id="switch">Toggle font</li>
-        <li id="invert">Invert</li>
-        <li id="info">Info</li>
-        <li id="hide"><</li>
-        <li id="show">></li>
+        <li id="autoswitch"><a href="#">Auto switch</a></li>
+        <li id="switch"><a href="#">Toggle font</a></li>
+        <li id="invert"><a href="#">Invert</a></li>
+        <li id="info"><a href="#">Info</a></li>
+        <li id="hide"><a href="#"><</a></li>
+        <li id="show"><a href="#">></a></li>
     </ul>
     <div id="about">
         <span>Hint: Click to edit the text below.<br>
@@ -110,7 +116,7 @@
             <li>Changing sizes turns off auto switch</li>
             <li>The demo won't work if you don't have the fonts installed on
             your computer</li>
-            <li id="strobe">Clicking on this text has been known to induce seizures</li>
+            <li id="strobe">Clicking on this text has been known to induce seizures (you've been warned)</li>
         </ol>A futile exercise in jQuery by <a href="http://aelx.co">Alex
         Tomlinson</a>
 			</span>

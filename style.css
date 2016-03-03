@@ -77,6 +77,10 @@ span {
   font-weight: normal;
 }
 
+.ulist a {
+  color: inherit;
+}
+
 .ulist {
   position: fixed;
   width: 700px;
@@ -96,7 +100,6 @@ span {
   font-weight: 600;
   font-style: normal;
   font-size: 13px;
-  cursor: crosshair;
   transition: left .1s;
 }
 
