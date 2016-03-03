@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 @font-face {font-family: 'HelveticaLT';src: url('webfonts/3088D5_0_0.eot');src: url('webfonts/3088D5_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3088D5_0_0.woff2') format('woff2'),url('webfonts/3088D5_0_0.woff') format('woff'),url('webfonts/3088D5_0_0.ttf') format('truetype');}
+@-moz-document url-prefix() {
 
+    p{font-family: "HelveticaLT"} }
+
+}
 
 html {
   background-color: white;
@@ -33,9 +37,9 @@ a:hover {
 }
 
 @keyframes switch {
-    0%   {font-family: "HelveticaLT";}
+    0%   {font-family: Helvetica, "HelveticaLT";}
     50%  {font-family: Arial;}
-    100%  {font-family: "HelveticaLT";}
+    100%  {font-family: Helvetica, "HelveticaLT";}
   }
 
   @keyframes info {
@@ -123,7 +127,7 @@ span {
 }
 
 .letters {
-  font-family: "HelveticaLT";
+  font-family: Helvetica, "HelveticaLT";
   font-weight: normal;
   font-size: 100px;
   margin: auto;
