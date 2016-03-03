@@ -41,6 +41,21 @@ a:hover {
       100%  {opacity: 1;}
     }
 
+    @keyframes strobe {
+        0%   {  background-color: black;
+          color: white;}
+        50%  {  background-color: white;
+          color: black;}
+          100%  {  background-color: black;
+            color: white;}
+      }
+
+      .strobe {
+        animation-name: strobe;
+        animation-duration: .1s;
+        animation-iteration-count: infinite;
+      }
+
 #about {
   font-family: "Open Sans", sans-serif;;
   width: 300px;
@@ -117,6 +132,11 @@ span {
 p {
   margin-top: 70px;
   transition: .5s;
+}
+
+.pstrobe {
+  margin-top: 70px;
+  transition: 0s;
 }
 
 .small {

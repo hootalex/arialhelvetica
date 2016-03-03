@@ -62,6 +62,17 @@
                         $("p").toggleClass("small");
             });
 
+            $("#strobe").click(function() {
+
+                $("html, ul").toggleClass("strobe");
+            });
+
+            $("#strobe").click(function() {
+              $().removeClass();
+
+                $("p").toggleClass("pstrobe");
+            });
+
 
         });
     </script>
@@ -98,7 +109,8 @@
             <li>Auto switch only works Chrome</li>
             <li>Changing sizes turns off auto switch</li>
             <li>The demo won't work if you don't have the fonts installed on
-            your computer.</li>
+            your computer</li>
+            <li id="strobe">Clicking on this text has been known to induce seizures</li>
         </ol>A futile exercise in jQuery by <a href="http://aelx.co">Alex
         Tomlinson</a>
 			</span>
