@@ -117,6 +117,10 @@ span {
   display: block;
 }
 
+#autoswitch, #switch, #invert, #hide, #info {
+    cursor: pointer;
+}
+
 .hideaway {
   left: -655px;
 }
