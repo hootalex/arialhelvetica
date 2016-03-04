@@ -117,7 +117,7 @@ span {
   display: block;
 }
 
-#autoswitch, #switch, #invert, #hide, #info {
+#autoswitch, #switch, #invert, #hide, #info, #show {
     cursor: pointer;
 }
 
