@@ -1,114 +1,137 @@
-
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="format-detection" content="telephone=no">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <title>Helvetica vs. Arial</title>
-    <script src="http://code.jquery.com/jquery-latest.js">
-    </script>
-    <script>
-        $(document).ready(function() {
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Helvetica vs. Arial</title>
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-            $("#invert").click(function() {
+    ga('create', 'UA-66399034-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="http://code.jquery.com/jquery-latest.js">
+  </script>
+  <script>
+    $(document).ready(function() {
 
-                $("html, ul").toggleClass("invert");
-            });
+      $("#invert").click(function() {
 
-            $("#hide").click(function() {
+        $("html, ul").toggleClass("invert");
+      });
 
-                $("ul").toggleClass("hideaway");
-            });
+      $("#hide").click(function() {
 
-            $("#show").click(function() {
+        $("ul").toggleClass("hideaway");
+      });
 
-                $("ul").toggleClass("hideaway");
-            });
+      $("#show").click(function() {
 
-            $("#switch").click(function() {
+        $("ul").toggleClass("hideaway");
+      });
 
-                $("p").toggleClass("arial");
-            });
+      $("#switch").click(function() {
 
-            $("#info").click(function() {
-                // assumes element with id='button'
-                $("#about").toggle();
-            });
+        $("p").toggleClass("arial");
+      });
 
-            $("#about").click(function() {
-                // assumes element with id='button'
-                $("#about").toggle();
-            });
+      $("#info").click(function() {
+        // assumes element with id='button'
+        $("#about").toggle();
+      });
 
-            $("#autoswitch").click(function() {
+      $("#about").click(function() {
+        // assumes element with id='button'
+        $("#about").toggle();
+      });
 
-                $("p").toggleClass("autoswitch");
-            });
+      $("#autoswitch").click(function() {
 
-            $("#dropdown").change(function(){
-               if($(this).val() == 'Large')
-                 $("p").removeClass();
-                  $("p").addClass("large");
-            });
+        $("p").toggleClass("autoswitch");
+      });
 
-            $("#dropdown").change(function(){
-                 if($(this).val() == 'Normal size')
-                        $("p").toggleClass("normal");
-            });
+      $("#dropdown").change(function() {
+        if ($(this).val() == 'Large')
+          $("p").removeClass();
+        $("p").addClass("large");
+      });
 
-            $("#dropdown").change(function(){
-                 if($(this).val() == 'Huge')
-                   $("p").removeClass();
-                        $("p").toggleClass("huge");
-            });
+      $("#dropdown").change(function() {
+        if ($(this).val() == 'Normal size')
+          $("p").toggleClass("normal");
+      });
 
-            $("#dropdown").change(function(){
-                 if($(this).val() == 'Paragraph')
-                   $("p").removeClass();
-                        $("p").toggleClass("small");
-            });
+      $("#dropdown").change(function() {
+        if ($(this).val() == 'Huge')
+          $("p").removeClass();
+        $("p").toggleClass("huge");
+      });
 
-            $("#strobe").click(function() {
+      $("#dropdown").change(function() {
+        if ($(this).val() == 'Paragraph')
+          $("p").removeClass();
+        $("p").toggleClass("small");
+      });
 
-                $("html, ul").toggleClass("strobe");
-            });
+      $("#strobe").click(function() {
 
-            $("#strobe").click(function() {
-              $().removeClass();
+        $("html, ul").toggleClass("strobe");
+      });
 
-                $("p").toggleClass("pstrobe");
-            });
+      $("#strobe").click(function() {
+        $().removeClass();
+
+        $("p").toggleClass("pstrobe");
+      });
 
 
-        });
-    </script>
+    });
+  </script>
 </head>
+
 <body>
-    <ul class="ulist">
-        <li style="list-style: none"><select id="dropdown">
-            <option>
-                Normal size
-            </option>
-            <option>
-                Large
-            </option>
-            <option>
-                Huge
-            </option>
-            <option>
-                Paragraph
-            </option>
-        </select></li>
-        <li id="autoswitch"><a href="#">Auto switch</a></li>
-        <li id="switch"><a href="#">Toggle font</a></li>
-        <li id="invert"><a href="#">Invert</a></li>
-        <li id="info"><a href="#">Info</a></li>
-        <li id="hide"><a href="#"><</a></li>
-        <li id="show"><a href="#">></a></li>
-    </ul>
-    <div id="about">
-        <span>Hint: Click to edit the text below.<br>
+  <ul class="ulist">
+    <li style="list-style: none">
+      <select id="dropdown">
+        <option>
+          Normal size
+        </option>
+        <option>
+          Large
+        </option>
+        <option>
+          Huge
+        </option>
+        <option>
+          Paragraph
+        </option>
+      </select>
+    </li>
+    <li id="autoswitch"><a href="#">Auto switch</a></li>
+    <li id="switch"><a href="#">Toggle font</a></li>
+    <li id="invert"><a href="#">Invert</a></li>
+    <li id="info"><a href="#">Info</a></li>
+    <li id="hide">
+      <a href="#">
+        <</a>
+    </li>
+    <li id="show"><a href="#">></a></li>
+  </ul>
+  <div id="about">
+    <span>Hint: Click to edit the text below.<br>
         <br>
         Known Issues (Prioritized)
         <ol>
@@ -120,12 +143,12 @@
         </ol>A futile exercise in jQuery by <a href="http://aelx.co">Alex
         Tomlinson</a><br><br><a href="https://github.com/hootalex/arialhelvetica">Proudly hosted on GitHub</a>
 			</span>
-    </div>
-    <div class="letters">
-        <p class="editable" contenteditable="true" id="letters" spellcheck=
-        "false">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu
-        Vv Ww Xx Yy Zz<br>
-        1234567890</p>
-    </div>
+  </div>
+  <div class="letters">
+    <p class="editable" contenteditable="true" id="letters" spellcheck="false">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+      <br> 1234567890
+    </p>
+  </div>
 </body>
+
 </html>
