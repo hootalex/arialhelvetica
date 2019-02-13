@@ -9,6 +9,7 @@
 html {
   background-color: white;
   -webkit-font-smoothing: antialiased;
+transition: .5s;
 }
 
 li::selection  { background: rgba(0, 0, 0, 0);; }
